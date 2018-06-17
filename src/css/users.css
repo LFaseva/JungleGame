@@ -16,6 +16,7 @@
     flex-direction: column;
     position: absolute;
     top:20px;
+    font-size: 24px;
     left: 20px;
     background: rgba(60, 165, 60, 0.6);
 }
@@ -75,7 +76,7 @@
 }
 
 .heroFightMonster{
-    transform: translate(1450px,-600px) rotateZ(360deg);
+    transform: translate(1750px,-700px) rotateZ(360deg);
     transition: transform 6s;
 }
 
