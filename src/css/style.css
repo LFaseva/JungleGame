@@ -1,0 +1,112 @@
+@import 'monster.css';
+@import 'modal.css';
+@import 'levels.css';
+@import 'users.css';
+*{
+    transition: all 1s;
+}
+body{
+    overflow: hidden;
+}
+.backGround{
+    display: block;
+    width: 100vw;
+    /*height: 100vh;*/
+    background-color: green;
+    background-image: url('../resources/img/start-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    width: 550px;
+    height: 180px;
+    margin:0 auto;
+    background-image: url("../resources/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homeLinks{
+    display: flex;
+    position: relative;
+    background-image: url(../resources/img/holder.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+    bottom: -270px;
+    justify-content: center;
+    margin: 20px auto 0;
+}
+.items{
+    background-image: url(../resources/img/tablet3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 80px;
+    font-size: 24px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(../resources/img/paw.png), auto;
+    left: calc(50% - 205px);
+    width: 406px;
+}
+.items:hover{
+    transform: scale(1.2);
+}
+.item1{
+    top: 27px;
+}
+.item3{
+    top: 113px;
+}
+.item4{
+    top: 200px;
+}
+
+.tableScoreLabel{
+    position: absolute;
+    background-image: url('../resources/img/table.png');
+    background-repeat: no-repeat;
+}
+.startGameLabel{
+    position: absolute;
+    background-image: url('../resources/img/start.png');
+    background-repeat: no-repeat;
+}
+.invisible{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+.gameOver{
+    margin: 0 auto;
+    display: block;
+    width: 35%;
+}
+.form input,
+.formSaveBtn{
+    margin: 10px auto;
+}
+.music{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 20%;
+    background-image: url(../resources/img/voice.png);
+    background-repeat: no-repeat;
+    background-position: -45px 10px;
+    cursor: pointer;
+}
+.music:hover{
+    transform: scale(1.2);
+}
+.musicNo {
+    background-position: 10px 10px;
+}

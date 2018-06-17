@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link href="src/css/reset.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+</head>
+<body>
+
+<div class="backGround" id="block">
+    <div class="logo"></div>
+    <div class="music" id="player">
+        <audio id="music" class="music" src="src/resources/audio/voice.mp3" autoplay loop></audio>
+    </div>
+        <div class="homeLinks" id="startText">
+        <div id="newPlayers" class="items item1">New Player</div>
+        <div id="table" class="items item3">Table Score</div>
+        <div class="items item4" id="start">Start Game</div>
+    </div>
+    </div>
+    <div id="game" class="game invisible">
+        <div id="hero" class="hero"></div>
+        <div id="heroInfo" class="heroInfo"></div>
+        <div id="monster" class="monster"></div>
+        <div id="monsterInfo" class="monsterInfo"></div>
+    </div>
+</div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>

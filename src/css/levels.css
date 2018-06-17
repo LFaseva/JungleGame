@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.levelImages{
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+.levelImages img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 1s;
+}
+.levelImages img:hover{
+    transform: rotate(90deg) scale(1.3);
+}
+
+.levels{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.word, .level2Word{
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.answerBtn{
+    margin: 20px;
+}
+.tableScoreButton, .tryAgain{
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    color: #013102;
+    background: white;
+    border: 1px solid #013102;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+.tableScoreButton:hover,
+.tryAgain:hover{
+    color: white;
+    background: #013102;
+}
+.tryAgain{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.tableScore{
+    display: flex;
+    background: #013102;
+    background-image: url('../resources/img/jungle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    max-height: 600px;
+    padding-bottom: 80px;
+}
+.tableScore h1{
+    font-weight: bold;
+    color: #90f380;
+    font-size: 36px;
+    font-style: oblique;
+    margin: 20px auto;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+.levelsText{
+    position: absolute;
+    color: #fcfe39;
+    font-weight: bold;
+    font-size: 36px;
+    font-style: oblique;
+    top: 40%;
+    text-align: center;
+}
+.level2Word{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.level2Word span{
+    border: 1px solid white;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.picture{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.voice{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: yellow;
+    justify-content: center;
+    color: darkgreen;
+    font-size: 35px;
+    border-radius: 50% 50%;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.voice:hover{
+    background: darkgreen;
+    color: yellow;
+    border: 3px solid yellow;
+}
+.task{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+}
+.task span{
+    margin: 10px 0;
+}
+.task input{
+    margin: 20px 0;
+}
+.levels h1{
+    font-size: 24px;
+}

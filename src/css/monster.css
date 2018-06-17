@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+.backGround{
+    height: 100vh;
+    position: relative;
+}
+.monster{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 300px;
+    position: absolute;
+    right: 250px;
+    bottom: 25px;
+}
+.monsterInfo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    background: rgba(60, 165, 60, 0.6);
+}
+.monsterName{
+    color: white;
+    padding: 10px 20px 0 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+.monsterHealth{
+    padding: 0 20px 20px;
+}
+.monsterHealth progress{
+    border: 1px solid rgb(167,207,223);
+}
+.monsterHealth progress::-webkit-progress-bar {
+    background: rgba(167,207,223, 0.2);
+}
+.monsterHealth progress::-webkit-progress-value{
+    background: rgb(167,207,223);
+    background: -moz-linear-gradient(left,  rgba(167,207,223,1) 17%, rgba(35,83,138,1) 78%, rgba(35,83,138,1) 91%);
+    background: -webkit-linear-gradient(left,  rgba(167,207,223,1) 17%,rgba(35,83,138,1) 78%,rgba(35,83,138,1) 91%);
+    background: linear-gradient(to right,  rgba(167,207,223,1) 17%,rgba(35,83,138,1) 78%,rgba(35,83,138,1) 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 );
+}
+.monsterHealth progress::-moz-progress-bar {
+    background: rgb(167,207,223);
+    background: -moz-linear-gradient(left,  rgba(167,207,223,1) 17%, rgba(35,83,138,1) 78%, rgba(35,83,138,1) 91%);
+    background: -webkit-linear-gradient(left,  rgba(167,207,223,1) 17%,rgba(35,83,138,1) 78%,rgba(35,83,138,1) 91%);
+    background: linear-gradient(to right,  rgba(167,207,223,1) 17%,rgba(35,83,138,1) 78%,rgba(35,83,138,1) 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 );
+}
+.monsterHealth span{
+    color: white;
+    margin: 0 10px;
+}
+.monsterArm{
+    position: absolute;
+    width: 70px;
+    bottom: 100px;
+    right: 0;
+    z-index: 3;
+    transition: transform 0.1s;
+}
+.monsterBody{
+    position: absolute;
+    height: 250px;
+    bottom: 0;
+}
+.monsterHead{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    animation: moveHead 3s infinite linear alternate-reverse;
+}
+
+.monsterArmHero{
+    transform: translate(-1450px,-600px) rotateZ(360deg);
+    transition: transform 6s;
+    transition-delay: 2s;
+}

@@ -1,0 +1,110 @@
+.backGround{
+    background-image: url(../resources/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /*width: 100vw;*/
+    height: 100vh;
+    text-align: center;
+}
+.logo{
+    width: 550px;
+    height: 180px;
+    margin:0 auto;
+    background-image: url("../resources/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.startNewGame{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background-image: url("../resources/img/start.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 1s;
+    box-sizing: border-box;
+}
+.startNewGame:hover{
+    transform: rotateY(-40deg);
+}
+.startNewGame:after{
+    content: 'Start';
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 118px;
+    right: 50px;
+    transform: skewY(3deg);
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../resources/img/back.png');
+    background-position: 0px 1px;
+    background-size: 220px;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 140px;
+    cursor: pointer;
+    animation: swing 2s infinite linear;
+}
+.back:before{
+    content: 'Go BACK';
+    position: absolute;
+    top: 83px;
+    left: 62px;
+    font-size: 22px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+.heroes{
+    display: flex;
+    margin: 30px auto 0;
+}
+.heroes img{
+    background: white;
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 100px;
+    height:100px;
+}
+.formSaveBtn{
+    background: darkgreen;
+    color:yellow;
+    width: 200px;
+    margin: 20px auto 20px;
+    padding: 10px 20px;
+}
+.labelName{
+    font-size: 3em;
+    font-weight: bold;
+    color: yellow;
+    font-style: italic;
+}
+@keyframes swing{
+    0%{
+        transform: rotate3d(0, 30, 0, -30deg);
+    }
+    50%{
+        transform: rotate3d(0, 30, 0, 0deg);
+    }
+    100%{
+        transform: rotate3d(0, 30, 0, 30deg);
+    }
+}
+

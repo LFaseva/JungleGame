@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    left: 230px;
+    bottom: 40px;
+    cursor: pointer;
+}
+.heroInfo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    background: rgba(60, 165, 60, 0.6);
+}
+.heroName{
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 30px;
+    padding: 10px 20px 0 20px;
+}
+.heroHealth{
+    padding: 0 20px 20px;
+}
+.heroHealth progress{
+    border: 1px solid rgb(255,154,145);
+}
+.heroHealth progress::-webkit-progress-bar {
+    background: rgba(255,154,145, 0.2);
+}
+.heroHealth progress::-webkit-progress-value{
+    background: rgb(255,154,145);
+    background: -moz-linear-gradient(left,  rgba(255,154,145,1) 0%, rgba(207,4,4,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,154,145,1) 0%,rgba(207,4,4,1) 100%);
+    background: linear-gradient(to right,  rgba(255,154,145,1) 0%,rgba(207,4,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a91', endColorstr='#cf0404',GradientType=1 );
+}
+.heroHealth progress::-moz-progress-bar {
+    background: rgb(255,154,145);
+    background: -moz-linear-gradient(left,  rgba(255,154,145,1) 0%, rgba(207,4,4,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,154,145,1) 0%,rgba(207,4,4,1) 100%);
+    background: linear-gradient(to right,  rgba(255,154,145,1) 0%,rgba(207,4,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a91', endColorstr='#cf0404',GradientType=1 );
+}
+.heroHealth span{
+    color: white;
+    margin: 0 10px;
+}
+.heroArm{
+    position: absolute;
+    width: 70px;
+    bottom: 100px;
+    left: -45px;
+    transition: transform 0.1s;
+}
+.heroBody{
+    position: absolute;
+    height: 250px;
+    bottom: 0;
+}
+.heroHead{
+    position: absolute;
+    top: -25px;
+    z-index: 2;
+    animation: moveHead 3s infinite linear alternate;
+}
+
+.heroFightMonster{
+    transform: translate(1450px,-600px) rotateZ(360deg);
+    transition: transform 6s;
+}
+
+@keyframes moveHead {
+    from{
+        transform: rotateZ(90deg);
+    }
+    to{
+        transform: rotateZ(-90deg);
+    }
+}
