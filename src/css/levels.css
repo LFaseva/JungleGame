@@ -141,6 +141,7 @@
     flex-direction: column;
     padding: 20px;
     margin: 10px;
+    font-size: 24px;
     align-items: center;
 }
 .task span{
@@ -150,5 +151,5 @@
     margin: 20px 0;
 }
 .levels h1{
-    font-size: 24px;
+    font-size: 31px;
 }
