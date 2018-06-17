@@ -105,7 +105,7 @@ class Levels {
       }
       case '3' : {
         text = 'Solve the arithmetic task';
-        taskBlock = `<span>*you have round to enteger </span>
+        taskBlock = `<span>*you have round to integer </span>
             <span class="word">${task}</span>
             <input type="text" id="userAnswer" placeholder="Enter your answer..."/>`;
         return this.playLevels(taskBlock, text);
